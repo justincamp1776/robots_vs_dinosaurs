@@ -1,3 +1,4 @@
+from weapon import Weapon
 
 
 class Dinosaur:
@@ -8,4 +9,6 @@ class Dinosaur:
         self.attack_power = attack_power
 
     def attack(self, robot):
-        self.robot.health = robot.health - (self.weapon.attack_power / 10) * 2
+        damage = (robot.weapon.attack_power / 10) * 2
+        robot.health = robot.health - damage
+        print(f"{robot.name}'s health is {robot.health}")

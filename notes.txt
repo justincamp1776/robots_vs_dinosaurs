@@ -12,3 +12,22 @@ to happen to implement the functionality.
  2. select the object that I want to attack.
 
  3. call the attack function on
+
+
+
+
+ ///////////////////////////////
+
+ Notes: 
+
+ Run Game is the master function that calls other functions
+
+ Display Welcome will be called in init
+
+ Battle is where all the logic is stored such as sequence of attacks, status of objects at the end of the attack, 
+  if object dies then remove that object, check health, display health
+
+dino turn will call the show opponenet options functionality
+
+Show available opponents will display the oppenents available to be attacked. Need to have a way to select the object prior to attck.
+
