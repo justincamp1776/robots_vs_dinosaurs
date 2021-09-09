@@ -1,0 +1,14 @@
+, write an algorithm that represents the 
+steps of the robots in the fleet and the dinosaurs in the herd battling. Think about the steps that need 
+to happen to implement the functionality.
+
+
+ Algorithm for Robots Vs dinosaurs
+
+ 1. Select the object that I want to attack with. 
+
+ 3. display all of the objects that I can attack
+
+ 2. select the object that I want to attack.
+
+ 3. call the attack function on
