@@ -1,6 +1,3 @@
-, write an algorithm that represents the 
-steps of the robots in the fleet and the dinosaurs in the herd battling. Think about the steps that need 
-to happen to implement the functionality.
 
 
  Algorithm for Robots Vs dinosaurs

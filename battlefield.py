@@ -4,44 +4,34 @@ from herd import Herd
 
 class Battlefield:
 
-    def __init__(self, name):
-        self.name = name
-        self.display_welcome()
-
-        fleet = Fleet()
-        print(fleet)
-        print("hello")
+    def __init__(self):
+        self.fleet = Fleet()
+        self.herd = Herd()
+        self.run_game()
 
     def run_game(self):
-        # Master function. Will call other functions here.
-        pass
+        self.display_welcome()
+        self.battle()
 
     def display_welcome(self):
-        user_input = input(
-            "Welcome to Back to the Future. Are you ready to begin? type: 'yes or no'")
-        if(user_input.upper() == "yes".upper()):
-            self.run_game()
-        else:
-            self.display_welcome()
+        print("Welcome to robots vs dinosaurs!")
 
     def battle(self):
-        # logic for game goes here
-        pass
+        while len(self.fleet.robots) != 0 and len(self.herd.dinosaurs) != 0:
+            self.dino_turn(
+                self.herd.dinosaurs[0], self.fleet.robots[0], self.fleet.robots)
+            self.robo_turn(
+                self.fleet.robots[0], self.herd.dinosaurs[0], self.herd.dinosaurs)
+        self.display_winner()
 
-    def display_fleet(self, list):
-        for object in list:
-            self.dino_turn(object)
+    def dino_turn(self, dino, robot, list_of_robos):
+        dino.attack(robot, list_of_robos)
 
-    def dino_turn(self, robot):
-        self.show_dino_opponents(robot)
-
-    def show_dino_opponents(self):
-
-        print(object.name + "Current Health: " + object.health)
-
-    def show_robo_opponents(self):
-        # display dinos
-        pass
+    def robo_turn(self, robot, dino, list_of_dinos):
+        robot.attack(dino, list_of_dinos)
 
     def display_winner(self):
-        pass
+        if len(self.fleet.robots) != 0:
+            print("Robots win again!")
+        else:
+            print("Dinosaurs with the come back!")

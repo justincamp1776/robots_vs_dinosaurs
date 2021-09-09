@@ -6,9 +6,11 @@ class Robot:
     def __init__(self, name):
         self.name = name
         self.health = 100
-        self.weapon = Weapon("Scar-XL", 82)
+        self.weapon = Weapon("Scar-XL", 80)
 
-    def attack(self, dinosaur):
-        damage = (dinosaur.attack_power / 10) * 2
+    def attack(self, dinosaur, list_of_dinos):
+        damage = (dinosaur.attack_power / 4)
         dinosaur.health = dinosaur.health - damage
+        if dinosaur.health <= 0:
+            list_of_dinos.pop(0)
         print(f"{dinosaur.name}'s health is {dinosaur.health}")
