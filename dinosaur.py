@@ -8,4 +8,4 @@ class Dinosaur:
         self.attack_power = attack_power
 
     def attack(self, robot):
-        damage = robot.health - (self.weapon.attack_power / 10) * 1.5
+        robot.health = robot.health - (self.weapon.attack_power / 10) * 2

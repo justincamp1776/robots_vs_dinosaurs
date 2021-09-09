@@ -8,7 +8,7 @@ class Robot:
     def __init__(self, name):
         self.name = name
         self.health = 100
-        self.weapon = Weapon("Scar-XL", 80)
+        self.weapon = Weapon("Scar-XL", 82)
 
     def attack(self, dinosaur):
-        damage = dinosaur.health - (self.weapon.attack_power / 10) * 1.5
+        dinosaur.health = dinosaur.health - (self.weapon.attack_power / 10) * 2

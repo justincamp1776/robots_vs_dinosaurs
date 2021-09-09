@@ -5,14 +5,10 @@
 attack methods should be locateed inside of the attacker's class
 
 -attacks should pass in the target as a parameter so that the target's health 
- can be decremented.
 
- attacks are called on the battlefield.
 
- the battlefield is instantiated inside of main.py
+ 
 
- weapon attack power should be standardized to result in a proportionate 
- decrementation of the targets health.
 
-        target health * ((AP/2) / 100)
-        If health < 5 GameOver.
+
+   
