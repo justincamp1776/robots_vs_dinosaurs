@@ -1,4 +1,3 @@
-from weapon import Weapon
 
 
 class Dinosaur:

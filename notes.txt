@@ -11,7 +11,19 @@ to happen to implement the functionality.
 
  2. select the object that I want to attack.
 
- 3. call the attack function on
+ 3. call the attack function.
+
+ 4. display the decremented health of the target.
+
+ 5. Repeat Process for other side (herd or fleet)
+
+ 6. display end of life for any object out of health.
+
+ 7. remove that object from list of attackers/ targets
+
+ 8. Repeat until 1 side has 1 object left.
+
+ 9. Display the winner
 
 
 

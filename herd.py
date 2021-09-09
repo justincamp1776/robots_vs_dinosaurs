@@ -15,7 +15,3 @@ class Herd:
         self.dinosaurs.append(dino_1)
         self.dinosaurs.append(dino_2)
         self.dinosaurs.append(dino_3)
-
-
-# herd = Herd()
-# print("hello")
