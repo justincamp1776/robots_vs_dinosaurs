@@ -7,6 +7,8 @@ class Herd:
         self.dinosaurs = []
         self.create_herd()
 
+     # Below is where 3 dinosaurs were instantiated and added to a list.
+
     def create_herd(self):
         dino_1 = Dinosaur("Rex", 90)
         dino_2 = Dinosaur("Velo", 79)

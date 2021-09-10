@@ -1,3 +1,41 @@
+, write an algorithm that represents the 
+steps of the robots in the fleet and the dinosaurs in the herd battling. Think about the steps that need 
+to happen to implement the functionality.
+
+Refectored Algo:
+
+1. 1 Robo attacks one Dino.
+
+2. They fight until 1 dies.
+
+3. The fighter keeps fighting.
+
+4. The losers group adds another fighter.
+
+5. The cycle continues until all of 1 breed is dead.
+
+6. Display winner
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  Algorithm for Robots Vs dinosaurs

@@ -9,12 +9,17 @@ class Battlefield:
         self.herd = Herd()
         self.run_game()
 
+    # This initiates the battle.
+
     def run_game(self):
         self.display_welcome()
         self.battle()
 
     def display_welcome(self):
         print("Welcome to robots vs dinosaurs!")
+
+    #  The blocks of code below are responsible for keeping the attacks
+    #  going until the battle is complete.
 
     def battle(self):
         while len(self.fleet.robots) != 0 and len(self.herd.dinosaurs) != 0:
@@ -29,6 +34,8 @@ class Battlefield:
 
     def robo_turn(self, robot, dino, list_of_dinos):
         robot.attack(dino, list_of_dinos)
+
+    # This displays the winner
 
     def display_winner(self):
         if len(self.fleet.robots) != 0:
